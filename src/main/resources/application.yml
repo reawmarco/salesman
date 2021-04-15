@@ -1,0 +1,14 @@
+file:
+  in:
+    folder: /data/in
+    type: '*.dat'
+  out:
+    regex: (.*)(\.dat)
+    replace: $1.done$2
+    folder: /data/out
+separator: ç
+
+poller:
+  timerate: 1000
+  maxmessages: 5
+
